@@ -30,8 +30,8 @@ function onImageClick(e) {
     if (e.target.className !== 'gallery__image') {return};
 
     const selectedImage = e.target.dataset.source;
-    const selectedAlt = e.target.attributes.alt.nodeValue
-    const minImage = e.target.attributes.src.nodeValue
+    const selectedAlt = e.target.attributes.alt.nodeValue;
+    const minImage = e.target.attributes.src.nodeValue;
 
     const instance = basicLightbox.create(`
     <img
@@ -51,6 +51,6 @@ function onImageClick(e) {
             instance.close();
             window.removeEventListener('keydown', closeModal);
         };
-    }
-    } 
+        };
+    };
 }

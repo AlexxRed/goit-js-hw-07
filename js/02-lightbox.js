@@ -29,4 +29,4 @@ function onImageClick(e) {
         captionPosition: 'bottom',
         captionDelay: 250,
     });
-}
+};
